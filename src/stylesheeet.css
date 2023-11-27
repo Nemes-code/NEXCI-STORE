@@ -8,6 +8,17 @@ body {
   margin: 0;
 }
 
+.head {
+  font-size: 80px;
+  text-align: center;
+  color: #5f4a55;
+}
+
+.nav-link {
+  font-size: 40px;
+  color: brown;
+}
+
 .image {
   border: 1px solid #ddd;
   border-radius: 10px;

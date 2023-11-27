@@ -36,7 +36,7 @@ function Navigation() {
       </li>
       <li>
         <Link to="/crm" className="nav-link">
-          Customer Relations
+          Customers
         </Link>
       </li>
     </ul>

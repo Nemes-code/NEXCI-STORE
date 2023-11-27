@@ -6,7 +6,7 @@ function Home() {
       <navigation />
 
       <div className="nav">
-        <h1>NEXCI STORE</h1>
+        <h1 className="head">NEXCI STORE</h1>
         <img className="image" src="download.jpg" alt="Imageyapili" />
         <h3>
           An ERP for
