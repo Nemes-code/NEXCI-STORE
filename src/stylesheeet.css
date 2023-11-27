@@ -56,3 +56,15 @@ li a:hover:not(.active) {
   background-color: #bcdb94;
   color: white;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 10px; /* Gap between items */
+}
+
+.grid-container div {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
