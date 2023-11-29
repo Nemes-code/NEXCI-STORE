@@ -34,28 +34,56 @@ function App() {
   return (
     <div className="App">
       <form onSubmit={handleSubmit(submitData)}>
-        <label> First Name:</label>
-        <input type="text" {...register("firstName")} />
-        {errors.firstName && <span>{errors.firstName.message}</span>}
-        <label> Last Name:</label>
-        <input type="text" {...register("lastName")} />
-        {errors.lastName && <span>{errors.lastName.message}</span>}
-        <label> Email:</label>
-        <input type="text" {...register("email")} />
-        {errors.email && <span>{errors.email.message}</span>}
-        <label> Age:</label>
-        <input type="number" {...register("age", { valueAsNumber: true })} />
-        {errors.age && <span>{errors.age.message}</span>}
-        <label> Password:</label>
-        <input type="text" {...register("password")} />
-        {errors.password && <span>{errors.password.message}</span>}
+        <h1>STOCK REGISTRATION</h1>
+        <div>
+          <label> First Name:</label>
+        </div>
+        <div>
+          <input type="text" className="inp" {...register("firstName")} />
+        </div>
+        <div>{errors.firstName && <span>{errors.firstName.message}</span>}</div>
+        <div>
+          <label> Last Name:</label>
+        </div>
+        <div>
+          <input type="text" className="inp" {...register("lastName")} />
+          {errors.lastName && <span>{errors.lastName.message}</span>}
+        </div>
+        <div>
+          <label> Email:</label>
+        </div>
+        <div>
+          <input type="text" className="inp" {...register("email")} />
+          {errors.email && <span>{errors.email.message}</span>}
+        </div>
+        <div>
+          <label> Age:</label>
+        </div>
+        <div>
+          <input
+            type="number"
+            className="inp"
+            {...register("age", { valueAsNumber: true })}
+          />
+          {errors.age && <span>{errors.age.message}</span>}
+        </div>
+
+        <div>
+          <label> Password:</label>
+        </div>
+        <div>
+          <input type="text" className="inp" {...register("password")} />
+          {errors.password && <span>{errors.password.message}</span>}
+        </div>
+
         <label> Confirm Password:</label>
         <input type="text" {...register("comfirmPassword")} />
         {errors.comfirmPassword && (
           <span>{errors.comfirmPassword.message}</span>
         )}
-
-        <input type="submit" />
+        <div>
+          <input type="submit" />
+        </div>
       </form>
     </div>
   );
